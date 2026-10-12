@@ -1,0 +1,218 @@
+[color-theme]
+name = "Catppuccin Mocha"
+
+[ui]
+font-family = ""
+font-size = 13
+header-height = 35
+status-height = 25
+tab-min-width = 100
+activity-width = 48
+scroll-width = 10
+drop-shadow-width = 4
+
+[color-theme.base]
+black = "#11111B"
+blue = "#89B4FA"
+cyan = "#94E2D5"
+green = "#A6E3A1"
+grey = "#313244"
+magenta = "#CBA6F7"
+orange = "#FAB387"
+purple = "#F5C2E7"
+red = "#F38BA8"
+white = "#CDD6F4"
+yellow = "#F9E2AF"
+
+primary-background = "#1E1E2E"
+secondary-background = "#181825"
+current-background = "#313244"
+text = "$white"
+dim-text = "#A6ADC8"
+
+[color-theme.syntax]
+"comment" = "#6C7086"
+"constant" = "#FAB387"
+"type" = "#F9E2AF"
+"type.builtin" = "#F9E2AF"
+"builtinType" = "#F9E2AF"
+"typeAlias" = "#F9E2AF"
+"class" = "#F9E2AF"
+"struct" = "#F9E2AF"
+"structure" = "#F9E2AF"
+"interface" = "#F9E2AF"
+"enum" = "#F9E2AF"
+"enumMember" = "#FAB387"
+"enum-member" = "#FAB387"
+"number" = "#FAB387"
+"string" = "#A6E3A1"
+"string.escape" = "#F5C2E7"
+"escape" = "#F5C2E7"
+"function" = "#89B4FA"
+"method" = "#89B4FA"
+"function.method" = "#89B4FA"
+"constructor" = "#89B4FA"
+"keyword" = "#CBA6F7"
+"selfKeyword" = "#F38BA8"
+"modifier" = "#CBA6F7"
+"field" = "#B4BEFE"
+"property" = "#B4BEFE"
+"variable" = "#CDD6F4"
+"variable.parameter" = "#F5E0DC"
+"parameter" = "#F5E0DC"
+"variable.other.member" = "#B4BEFE"
+"operator" = "#89DCEB"
+"punctuation" = "#9399B2"
+"punctuation.delimiter" = "#9399B2"
+"punctuation.special" = "#89DCEB"
+"tag" = "#89B4FA"
+"attribute" = "#F9E2AF"
+"symbol" = "#F5C2E7"
+"label" = "#F9E2AF"
+"embedded" = "#CDD6F4"
+"text" = "#CDD6F4"
+"text.literal" = "#A6E3A1"
+"text.title" = "#89B4FA"
+"text.uri" = "#89DCEB"
+"text.reference" = "#CBA6F7"
+
+"markup.heading" = "#89B4FA"
+"markup.bold" = "#CDD6F4"
+"markup.italic" = "#CDD6F4"
+"markup.list" = "#FAB387"
+"markup.link.url" = "#89DCEB"
+"markup.link.label" = "#89B4FA"
+"markup.link.text" = "#A6E3A1"
+
+"bracket.color.1" = "#F38BA8"
+"bracket.color.2" = "#FAB387"
+"bracket.color.3" = "#F9E2AF"
+"bracket.unpaired" = "#F38BA8"
+
+[color-theme.ui]
+"r0.error" = "#F38BA8"
+"r0.warn" = "#F9E2AF"
+"r0.dropdown_shadow" = "#11111B88"
+"r0.border" = "#313244"
+"r0.scroll_bar" = "#45475A66"
+
+"r0.button.primary.background" = "#89B4FA"
+"r0.button.primary.foreground" = "#11111B"
+
+"r0.tab.active.background" = "#1E1E2E"
+"r0.tab.active.foreground" = "#CDD6F4"
+"r0.tab.active.underline" = "#CBA6F7"
+
+"r0.tab.inactive.background" = "#181825"
+"r0.tab.inactive.foreground" = "#A6ADC8"
+"r0.tab.inactive.underline" = "#CBA6F733"
+
+"r0.tab.separator" = "#313244"
+
+"r0.icon.active" = "#CDD6F4"
+"r0.icon.inactive" = "#6C7086"
+
+"r0.remote.icon" = "#181825"
+"r0.remote.local" = "#89B4FA"
+"r0.remote.connected" = "#A6E3A1"
+"r0.remote.connecting" = "#F9E2AF"
+"r0.remote.disconnected" = "#F38BA8"
+
+"editor.background" = "#1E1E2E"
+"editor.foreground" = "#CDD6F4"
+"editor.dim" = "#6C7086"
+"editor.focus" = "#89B4FA"
+"editor.caret" = "#F5E0DC"
+"editor.selection" = "#45475A"
+"editor.current_line" = "#24273A"
+"editor.indent_guide" = "#313244"
+"editor.sticky_header_background" = "#1E1E2E"
+
+"panel.background" = "#181825"
+"panel.foreground" = "#CDD6F4"
+"panel.foreground.dim" = "#A6ADC8"
+"panel.current.background" = "#313244"
+"panel.current.foreground" = "#FFFFFF"
+
+"activity.background" = "#181825"
+"activity.current" = "#1E1E2E"
+
+"status.background" = "#181825"
+"status.foreground" = "#CDD6F4"
+
+"palette.background" = "#181825"
+"palette.foreground" = "#CDD6F4"
+"palette.current.background" = "#313244"
+"palette.current.foreground" = "#FFFFFF"
+
+"completion.background" = "#181825"
+"completion.current" = "#313244"
+"hover.background" = "#181825"
+"tooltip.background" = "#181825"
+"tooltip.foreground" = "#CDD6F4"
+
+"r0.plugin.name" = "#CDD6F4"
+"r0.plugin.description" = "$text"
+"r0.plugin.author" = "#A6ADC8"
+
+"editor.debug_break_line" = "#89B4FA22"
+"editor.link" = "#89DCEB"
+"editor.visible_whitespace" = "#31324480"
+"editor.drag_drop_background" = "#89B4FA33"
+"editor.drag_drop_tab_background" = "#00000055"
+
+"inlay_hint.foreground" = "#A6ADC8"
+"inlay_hint.background" = "#313244"
+
+"error_lens.error.foreground" = "#F38BA8"
+"error_lens.error.background" = "#F38BA818"
+"error_lens.warning.foreground" = "#F9E2AF"
+"error_lens.warning.background" = "#F9E2AF18"
+"error_lens.other.foreground" = "#A6ADC8"
+"error_lens.other.background" = "#A6ADC818"
+
+"completion_lens.foreground" = "#6C7086"
+
+"source_control.added" = "#A6E3A1CC"
+"source_control.removed" = "#F38BA8CC"
+"source_control.modified" = "#89B4FACC"
+
+"panel.current.foreground.dim" = "#A6ADC8"
+"panel.hovered.background" = "#313244"
+"panel.hovered.active.background" = "#313244"
+"panel.hovered.foreground" = "#FFFFFF"
+"panel.hovered.foreground.dim" = "#A6ADC8"
+
+"status.modal.normal.background" = "#89B4FA"
+"status.modal.normal.foreground" = "#FFFFFF"
+"status.modal.insert.background" = "#A6E3A1"
+"status.modal.insert.foreground" = "#1E1E2E"
+"status.modal.visual.background" = "#F9E2AF"
+"status.modal.visual.foreground" = "#1E1E2E"
+"status.modal.terminal.background" = "#CBA6F7"
+"status.modal.terminal.foreground" = "#1E1E2E"
+
+"debug.breakpoint" = "#F38BA8"
+"debug.breakpoint.hover" = "#F38BA866"
+
+"markdown.blockquote" = "#6C7086"
+
+"terminal.cursor" = "#F5E0DC"
+"terminal.foreground" = "#CDD6F4"
+"terminal.background" = "#1E1E2E"
+"terminal.black" = "#45475A"
+"terminal.red" = "#FF2B2B"
+"terminal.green" = "#A6E3A1"
+"terminal.yellow" = "#F9E2AF"
+"terminal.blue" = "#89B4FA"
+"terminal.magenta" = "#CBA6F7"
+"terminal.cyan" = "#94E2D5"
+"terminal.white" = "#BAC2DE"
+"terminal.bright_black" = "#585B70"
+"terminal.bright_red" = "#FF2B2B"
+"terminal.bright_green" = "#A6E3A1"
+"terminal.bright_yellow" = "#F9E2AF"
+"terminal.bright_blue" = "#89B4FA"
+"terminal.bright_magenta" = "#CBA6F7"
+"terminal.bright_cyan" = "#94E2D5"
+"terminal.bright_white" = "#A6ADC8"

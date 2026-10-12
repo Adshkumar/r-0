@@ -1,0 +1,14 @@
+.vscode
+.r0
+.idea
+.fleet
+shell.nix
+lib/
+target/
+core/languages/
+vendor/
+
+.DS_Store
+*.patch
+*.tar
+*.gz

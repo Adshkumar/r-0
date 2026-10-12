@@ -1,0 +1,9 @@
+.github
+.vscode
+.r0
+docs
+extra/linux/docker
+extra/macos
+extra/windows
+target
+r0.spec

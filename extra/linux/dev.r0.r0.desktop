@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+
+Name=r0
+Comment=High-performance code editor
+Categories=Development;IDE;
+GenericName=Code Editor
+StartupWMClass=r0
+
+Icon=dev.r0.r0
+Exec=r0 %F
+Terminal=false
+MimeType=text/plain;inode/directory;
+Actions=new-window;
+
+[Desktop Action new-window]
+Name=New Window
+Exec=r0 --new %F
+Icon=dev.r0.r0

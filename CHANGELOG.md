@@ -1,0 +1,422 @@
+# Changelog
+
+## Unreleased
+
+### Features/Changes
+- Added document highlight for LSPs which support this feature
+- (Un)confirmed state of the editor is properly (re)stored
+- Implemented Folder/File choosing in remotes
+- The file explorer can now be focused with the mouse, and has keybinds for renaming/deleting files
+
+### Bug Fixes
+
+- Fix crash on Save All after closing settings
+
+## 0.4.6
+
+### Features/Changes
+
+- Add `.har` file extension as recognised JSON language
+- Remove builds for Ubuntu Oracular, add Ubuntu Plucky
+
+### Bug Fixes
+
+- Fix mouse wheel scrolling when viewing diff
+- Fix editor tabs not selectable while appearing selectable
+- Fix flickering when reordering editor tabs
+- Fix diff viewer to scroll using mouse
+- Fix updating window scale when it changes via settings tab
+- Fix vendor tarball not being included in GitHub release
+- Fix cursor style inconsistencies
+
+## 0.4.5
+
+### Bug Fixes
+
+- Fix missing/incorrect metadata for Linux packages using AppStream metainfo
+- Fix incorrect version in macOS/Windows package metadata
+- Fix rendering issues when using custom scale display
+
+## 0.4.4
+
+### Features/Changes
+
+- Update Fedora releases to use 41/42
+- Update Alpine to latest (used for building portable r0-proxy)
+- Remove Ubuntu Focal (20.04)
+
+### Bug Fixes
+
+- Fix dropdown menu disappearing after releasing mouse button
+- Fix issue with cargo vendoring due to duplicate `dpi` crate
+
+## 0.4.3
+
+### Features/Changes
+
+- Add Ubuntu 24.04 LTS (noble) build
+- Use Diff syntax for files with .diff/.patch extensions by default.
+- Update titles of file dialogs for better clarity
+- Bump to Rust 2024 Edition
+- Implement "Find References" panel
+- Implement "Go To Implementation" panel
+
+### Bug Fixes
+
+- Fix pointer event not working on plugin panel
+- Fix rename/new file editor in file explorer is too small
+
+## 0.4.2
+
+### Features/Changes
+
+- Implement "Run in terminal"
+- Implement document symbols in a panel
+- Implement "Go To Location" functionality in the Diff editor.
+- Implement on screen find which is similar to `f` in vim but for the whole screen.
+- Make file explorer horizontal scrollable
+- Implement "Reveal in system file explorer"
+
+### Bug Fixes
+
+- Fix markdown syntax highlighting
+- Fix click issue on window error message
+
+## 0.4.1
+
+### Features/Changes
+
+- Add fedora builds
+- Finish tree sitter dynamic library support by downloading from https://github.com/lapce/tree-sitter-grammars
+- Saves scale configuration in settings to restore at startup
+- text in ui can be selected and copied
+- add right click context menu for editor tab
+- terminal: added support for Alt+ some character input
+- Terminal: right-click to add "clear all" function
+- terminal: double-click to maximize bottom
+- initial lsp code lens support for rust-analyzer
+- Context menu for "reveal file in explorer"
+- support rust-analyzer's notification "experimental/serverStatus"
+- jump to definition support in Inlay Hints
+- "Show Call Hierarchy" support
+- Add proxy support and retry to all HTTPS GET requests.
+- Implement the drag-and-drop to open file/folder
+
+### Bug Fixes
+
+- #3203: Fallback to default theme is theme key is not found
+- use windows subsystem to prevent console running
+- reimplement gotodefinition on cmd/ctrl+click
+- fix crash on tinyskia renderer
+- show file status for scratch documents
+- fix crash due to locale_config
+
+## 0.4.0
+
+### Features/Changes
+
+- #2723: Line wrapping based on width (no column-based yet)
+- #1277: Error message prompted on missing git user.email and/or user.name
+- #2910: Files can be compared in the diff editor
+- #2918: Allow searching the shortcuts overview by shortcut (e.g. "Ctrl+P") or when condition (e.g. "list_focus")
+- #2955: Using glob patterns to hide files or directories in explorer
+- #3026: Add missing file explorer context menu entries
+- #3047: Add support for different CrLf/Lf line endings per-file
+- #3053: Add tooltips to various places
+- #3069: Allow color variables for themes
+- #3086: Add folding to panels
+- #3095: Add option to hide the Open Editors section in the explorer
+- #3096: Add source control status coloring to file explorer
+- #2989: Add building packages for linux distros
+- #3123: Swap sled to plain text file for db
+
+### Bug Fixes
+
+- #2779: Fix files detection on fresh git/VCS repository
+- #3031: Fix find not receiving inputs when clicked
+- #3142: Fix terminal default profile saving incorrectly
+- #3158: Fix ShowHover command for showing hover with keybind
+- #3119: Fix non US keyboard layout
+
+## 0.3.1
+
+### Features/Changes
+
+### Bug Fixes
+
+- #2754: Don't mark nonexistent files as read only (fix saving new files)
+- #2819: `Save Without Formatting` doesn't save the file
+
+## 0.3.0
+
+### Features/Changes
+
+- #2190: Rewrite with Floem UI
+- #2425: Reimplement completion lens
+- #2498: Show r0 as an option when doing "Open With..." on Linux
+- #2549: Implement multi-line vim-motion yank and delete (`3dd`, `2yy`, etc.)
+- #2553: Implement search and replace
+- #1809: Implement debug adapter protocol
+
+### Bug Fixes
+
+- #2650: Inform language servers that r0 supports LSP diagnostics
+
+## 0.2.8
+
+### Features/Changes
+
+- #1964: Add option to open files at line/column
+- #2403: Add basic Vim marks feature
+
+### Bug Fixes
+
+## 0.2.7
+
+### Features/Changes
+
+### Bug Fixes
+
+- #2209: Fix macOS crashes
+- #2228: Fix `.desktop` entry to properly associate with r0 on Wayland
+
+## 0.2.6
+
+### Breaking changes
+
+- #1820: Add remote svg icon colour to theme, disable plugin settings when none are available
+- #1988: Replace modal status background with background/foreground theme keys
+
+### Features/Changes
+
+- #1899: Improve sorting files with numbers
+- #1831: Plugin settings shown on right click
+- #1830: Adds Clojure language support
+- #1835: Add mouse keybinds
+- #1856: Highlight git/VCS modified files in explorer, palette, and buffer tabs
+- #1574: Panel sections can be expanded/collapsed
+- #1938: Use dropdown for theme selection in settings
+- #1960: Add sticky headers and code lens for PHP
+- #1968: Completion lens (disabled by default)
+  - ![image](https://user-images.githubusercontent.com/13157904/211959283-c3229cfc-28d7-4676-a50d-aec7d47cde9f.png)
+- #1972: Add file duplication option in fs tree context menu
+- #1991: Implement rendering of images in markdown views
+- #2004: Add ToggleHistory command
+- #2033: Add setting for double click delay (Currently only works for opening file from the explorer)
+- #2045: Add 'Rename Symbol' option on right-click
+- #2071: Add command and keybinds to delete line
+- #2073: Add Ctrl+{a,e,k} keybinds on macOS
+- #2128: Add r0 app icon to logo collection
+- #2127: Extended double-click options with file-only and file + folders mode
+- #1944: Add filter input in git branch selection
+  - ![image](https://user-images.githubusercontent.com/4404609/211232461-293e3b31-4e17-457e-825c-3018699a6fc2.png)
+
+### Bug Fixes
+
+- #1911: Fix movement on selections with left/right arrow keys
+- #1939: Fix saving/editing newly saved-as files
+- #1971: Fix up/down movement on first/last line
+- #2036: Fix movement on selections with up/down arrow keys
+- #2056: Fix default directory of remote session file picker
+- #2072: Fix connection issues from Windows to lapce proxy
+- #2069: Fix not finding git repositories in parent path
+- #2131: Fix overwriting symlink
+- #2188: Fix auto closing matching pairs in inappropriate inputs
+
+## 0.2.5
+
+### Breaking changes
+
+- #1726: Add more panel theme keys, apply hover first, then current item colour
+
+### Features/Changes
+
+- #1791: Add highlighting for scope lines
+- #1767: Added CMake tree-sitter syntax highlighting
+- #1759: Update C tree-sitter and highlight queries
+- #1758: Replaced dlang syntax highlighting
+- #1713: Add protobuf syntax and highlighting
+- #1720: Display signature/parameter information from LSP
+- #1723: In the palette, display the keybind for a command adjacent to it
+- #1722: Add 'Save without Formatting'; Add option to disable formatting on autosave
+- #1741: Add syntax highlighting for glsl
+- #1756: Add support for ssh port with `[user@]host[:port]`
+- #1760: Add vim motions `cw`, `ce`, `cc`, `S`, and QOL modal bind `gf`
+- #1770: Add support for terminal tabs
+
+### Bug Fixes
+
+- #1771: Update tree-sitter-bash
+- #1737: Fix an issue that plugins can't be upgraded
+- #1724: Files and hidden folders no longer will be considered when trying to open a plugin base folder
+- #1753: Limit proxy search response size in order to avoid issues with absurdly long lines
+- #1805: Fix some LSP bugs causing code actions to not show up correctly
+
+## 0.2.4
+
+### Features/Changes
+
+- #1700: Add prisma syntax and highlighting
+- #1702: Improved svelte treesitter queries
+- #1690: Add codelens and sticky headers for Dart
+- #1711: Add zstd support for plugin
+- #1715: Add support for requests from plugins
+
+### Bug Fixes
+
+- #1710: Fix autosave trying to save scratch files
+- #1709: Fix search result ordering
+- #1708: Fix visual issue when search panel is placed to either side panel
+
+## 0.2.3
+
+### Features/Changes
+
+- #1655: Add status foreground theme key, use author colour for plugin version
+- #1646: Fork the process when started from terminal
+- #1653: Paint plugin icons
+- #1644: Added "Reveal in File Tree" action to the editor tabs context menu
+- #1645: Add plugin search
+
+### Bug Fixes
+
+- #1651: Fixed an issue where new windows would never be created after closing all windows on macOS.
+- #1637: Fix python using 7 spaces instead of 4 spaces to indent
+- #1669: It will now remember panel states when open a new project
+- #1706: Fix the issue that color can't be changed in theme settings
+
+## 0.2.2
+
+### Features/Changes
+
+- #1643: Use https://plugins.lapce.dev/ as the plugin registry
+- #1620: Added "Show Hover" keybinding that will trigger the hover at the cursor location
+- #1619:
+  - Add active/inactive tab colours
+  - Add primary button colour
+  - Add hover effect in source control panel
+  - Add colour preview in settings
+- #1617: Fixed a stack overflow that would crash lapce when attempting to sort a large number of PaletteItems
+- #1609: Add syntax highlighting for erlang
+- #1590: Added ability to open file and file diff from source control context menu
+- #1570: Added a basic tab context menu with common close actions
+- #1560: Added ability to copy active editor remote file path to clipboard
+- #1510: Added support to discard changes to a file
+- #1459: Implement icon theme system
+  - **This is a breaking change for colour themes!**
+  - Colour themes should now use `[color-theme]` table format in theme TOML
+  - `volt.toml` now use `color-themes` and `icon-themes` keys. `themes` key is not used anymore.
+- #1554: Added XML language support
+- #1472: Added SQL language support
+- #1531: Improved Ctrl+Left command on spaces at the beginning of a line
+- #1491: Added Vim shift+c to delete remainder of line
+- #1508: Show in progress when r0 is self updating
+- #1475: Add editor setting: "Cursor Surrounding Lines" which sets minimum number of lines above and below cursor
+- #1525: Add editor indent guide
+- #1521: Show unique paths to disambiguate same file names
+- #1452: Wrap selected text with brackets/quotes
+- #1421: Add matching bracket highlighting
+- #1541: Order palette items according to last execute time
+
+### Bug Fixes
+
+- #1566|#1568: Use separate colour for drag and drop background
+- #1459: Fix opening currently used logfile
+- #1505: Fix proxy download for hosts with curl without -Z flag
+- #1483: Fix showing the close icon for the first tab when opening multiple tab
+- #1477: Now use `esc` to close searchbar regardless of the current focus
+- #1507: Fixed a crash when scratch buffer is closed
+- #1547: Fix infinite cycle in workspace symbol search
+- #1628: Fix kts files not being recognized
+
+## 0.2.1
+
+### Features/Changes
+
+- #1050: Collapse groups of problems in the problem list panel
+- #1165: Command to reveal item in system file explorer
+- #1196: Always show close button on focused editor tabs
+- #1208: Sticky header breadcrumbs
+  - This provides a header at the top which tells you information about the current scope! Especially useful for long blocks of code
+  - ![image](https://user-images.githubusercontent.com/13157904/195404556-2c329ebb-f721-4d55-aa22-56a54f8e8454.png)
+  - As well, you can see that there is now a breadcrumb path to the current file.
+  - A language with syntax highlighting can have this added, even without an LSP. Take a look at `language.rs` if your language isn't supported!
+- #1198: Focus current theme/language in palette
+- #1244; Prettier plugin panel
+- #1238: Improved multicursor selection
+- #1291: Use link colour for empty editor buttons
+- #1234: Automatic line height
+- #1262: Add absolute/relative copy path to file explorer
+- #1284: Render whitespace (default: none)
+  - ![image](https://user-images.githubusercontent.com/13157904/195410868-f27db85f-d7d2-4197-84f0-12d6c44e2053.png)
+- #1308: Handle LSP ResourceOp
+- #1251: Add vim's paste-before `P` command
+- #1319: Add information page for plugins
+- #1344: Replace the branch-selector menu with a scrollable list
+- #1352: Add duplicate line up/down commands
+- #1281: Implement logic for displaying plugin installation status
+- #1353: Implement syntax aware selection
+- #1358: Add autosave implementation
+- #1381: Show multiple hover items in the hover box
+- #1040: Add keybindings for `Shift-Del`, `Shift-Ins`, and `Ctrl-Ins`
+- #1401: Merge semantic and tree-sitter syntax highlighting
+- #1426: Add cursor position/current selection in status bar
+  - ![image](https://user-images.githubusercontent.com/13157904/195414557-dbf6cff1-3ab2-49ec-ba9d-c7507b2fc83a.png)
+- #1420: Add LSP `codeAction/resolve` support
+- #1440: IME support
+- #1449: Plugin settings in the editor support. Though this still needs some work from plugins to expose them all nicely!
+- #1441: Button for Case-Sensitive search
+- #1471: Add command to (un)install r0 from/to PATH
+- #1419: Add atomic soft tabs: now you can move your cursor over four spaces as if it was a single block
+
+### Syntax / Extensions
+
+- #957: Replace existing tree-sitter syntax highlighting code with part of Helix's better implementation
+  - This means that syntax highlighting for more languages! Such as fixing markdown support, and making so that languages embedded in others (like JavaScript in HTML) work.
+  - Note that not all themes have updated themselves to include the extra scopes/colors.
+- #1036: Recognize ESM/CJS extensions for JavaScript/TypeScript
+- #1007: Add ability to bind a key shortcut for quitting the editor
+- #1104: Add syntax highlighting for Dockerfile, C#, and Nix
+- #1118: Recognize `pyi, pyc, pyd, pyw` extensions for Python
+- #1122: Recognize extensions for DLang
+- #1335: Highlighting for DLang
+- #1153: Recognize and add highlighting for Dart
+- #1161: Recognize and add highlighting for Svelte and LaTeX files
+- #1299: Recognize and add highlighting for Kotlin
+- #1326: Recognize and add highlighting for Vue
+- #1370: Recognize and add highlighting for R
+- #1416: Recognize and add highlighting for Scheme
+- #1145: Adds/Fixes highlighting for C/C++/TypeScript/JavaScript/Zig/Bash
+- #1272: Adds/Fixes highlighting for Elm/JSX/TSX
+- #1450: Add `tf` extension for HCL
+
+### Bug Fixes
+
+- #1030: Don't try to open an font file with an empty name if there is no font family set
+- 9f0120d: Fix excessive CPU usage in part of the code
+- bf5a98a: Fix issue where sometimes r0 can't open
+- #1084: Use host shell in terminal when running inside Flatpak
+- #1120: Make Alt+Backspace work in the terminal properly
+- #1127: Improve Julia highlighting
+- #1179: Various improvements/fixes to window-tab functionality
+- #1210: Fixed closing modified file when closing split
+- #1219: Fix append command behavior
+- #1250: Fix too long socket path for proxy
+- #1252: Check whether the active editor tab index actually exists, avoiding a potential crash
+- #1294: Backward word deletion should respect whitespace better
+- #1301: Fix incorrect path when going from Url -> PathBuf (such as from an LSP)
+- #1368: Fix tabstop for postfix completions
+- #1388: Fix regex search within the terminal
+- #1423: Fix multiple cursor offset after inserting opening pair
+- #1434: Join PATH with correct platform separator
+- #1443: Correct terminal font sizing
+- #1453: Trim whitespace from search results
+- #1461: Load shell environment when launching from GUI
+- Many more fixes!
+
+### Other
+
+- #1191: Tone down default inlay hint background color in r0 dark theme
+- #1227: Don't restore cursor mode on undo
+- #1413: Disable format-on-save by default. Remember to re-enable this if you want it!
+- #1404: Log panics with full backtrace as error

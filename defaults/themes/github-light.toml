@@ -1,0 +1,218 @@
+[color-theme]
+name = "GitHub Light"
+
+[ui]
+font-family = ""
+font-size = 13
+header-height = 35
+status-height = 25
+tab-min-width = 100
+activity-width = 48
+scroll-width = 10
+drop-shadow-width = 4
+
+[color-theme.base]
+black = "#24292F"
+blue = "#0969DA"
+cyan = "#1B7C83"
+green = "#116329"
+grey = "#D0D7DE"
+magenta = "#8250DF"
+orange = "#953800"
+purple = "#8250DF"
+red = "#CF222E"
+white = "#FFFFFF"
+yellow = "#4D2D00"
+
+primary-background = "#FFFFFF"
+secondary-background = "#F6F8FA"
+current-background = "#EAEFF5"
+text = "$black"
+dim-text = "#57606A"
+
+[color-theme.syntax]
+"comment" = "#6E7781"
+"constant" = "#0550AE"
+"type" = "#953800"
+"type.builtin" = "#953800"
+"builtinType" = "#953800"
+"typeAlias" = "#953800"
+"class" = "#953800"
+"struct" = "#953800"
+"structure" = "#953800"
+"interface" = "#953800"
+"enum" = "#953800"
+"enumMember" = "#0550AE"
+"enum-member" = "#0550AE"
+"number" = "#0550AE"
+"string" = "#0A3069"
+"string.escape" = "#0550AE"
+"escape" = "#0550AE"
+"function" = "#8250DF"
+"method" = "#8250DF"
+"function.method" = "#8250DF"
+"constructor" = "#8250DF"
+"keyword" = "#CF222E"
+"selfKeyword" = "#CF222E"
+"modifier" = "#CF222E"
+"field" = "#0550AE"
+"property" = "#0550AE"
+"variable" = "#24292F"
+"variable.parameter" = "#953800"
+"parameter" = "#953800"
+"variable.other.member" = "#0550AE"
+"operator" = "#CF222E"
+"punctuation" = "#24292F"
+"punctuation.delimiter" = "#57606A"
+"punctuation.special" = "#CF222E"
+"tag" = "#116329"
+"attribute" = "#0550AE"
+"symbol" = "#0550AE"
+"label" = "#953800"
+"embedded" = "#24292F"
+"text" = "#24292F"
+"text.literal" = "#0A3069"
+"text.title" = "#0969DA"
+"text.uri" = "#0969DA"
+"text.reference" = "#0550AE"
+
+"markup.heading" = "#0969DA"
+"markup.bold" = "#24292F"
+"markup.italic" = "#24292F"
+"markup.list" = "#953800"
+"markup.link.url" = "#0969DA"
+"markup.link.label" = "#0550AE"
+"markup.link.text" = "#0A3069"
+
+"bracket.color.1" = "#B58900"
+"bracket.color.2" = "#8250DF"
+"bracket.color.3" = "#0969DA"
+"bracket.unpaired" = "#CF222E"
+
+[color-theme.ui]
+"r0.error" = "#CF222E"
+"r0.warn" = "#9A6700"
+"r0.dropdown_shadow" = "#00000033"
+"r0.border" = "#D0D7DE"
+"r0.scroll_bar" = "#8C959F44"
+
+"r0.button.primary.background" = "#2DA44E"
+"r0.button.primary.foreground" = "#FFFFFF"
+
+"r0.tab.active.background" = "#FFFFFF"
+"r0.tab.active.foreground" = "#24292F"
+"r0.tab.active.underline" = "#FD8C73"
+
+"r0.tab.inactive.background" = "#F6F8FA"
+"r0.tab.inactive.foreground" = "#57606A"
+"r0.tab.inactive.underline" = "#FD8C7333"
+
+"r0.tab.separator" = "#D0D7DE"
+
+"r0.icon.active" = "#24292F"
+"r0.icon.inactive" = "#6E7781"
+
+"r0.remote.icon" = "#F6F8FA"
+"r0.remote.local" = "#0969DA"
+"r0.remote.connected" = "#116329"
+"r0.remote.connecting" = "#9A6700"
+"r0.remote.disconnected" = "#CF222E"
+
+"editor.background" = "#FFFFFF"
+"editor.foreground" = "#24292F"
+"editor.dim" = "#6E7781"
+"editor.focus" = "#0969DA"
+"editor.caret" = "#0969DA"
+"editor.selection" = "#B6E3FF"
+"editor.current_line" = "#F6F8FA"
+"editor.indent_guide" = "#D0D7DE"
+"editor.sticky_header_background" = "#FFFFFF"
+
+"panel.background" = "#F6F8FA"
+"panel.foreground" = "#24292F"
+"panel.foreground.dim" = "#57606A"
+"panel.current.background" = "#EAEFF5"
+"panel.current.foreground" = "#24292F"
+
+"activity.background" = "#F6F8FA"
+"activity.current" = "#FFFFFF"
+
+"status.background" = "#F6F8FA"
+"status.foreground" = "#24292F"
+
+"palette.background" = "#FFFFFF"
+"palette.foreground" = "#24292F"
+"palette.current.background" = "#EAEFF5"
+"palette.current.foreground" = "#24292F"
+
+"completion.background" = "#FFFFFF"
+"completion.current" = "#EAEFF5"
+"hover.background" = "#FFFFFF"
+"tooltip.background" = "#FFFFFF"
+"tooltip.foreground" = "#24292F"
+
+"r0.plugin.name" = "#24292F"
+"r0.plugin.description" = "$text"
+"r0.plugin.author" = "#57606A"
+
+"editor.debug_break_line" = "#0969DA22"
+"editor.link" = "#0969DA"
+"editor.visible_whitespace" = "#D0D7DE80"
+"editor.drag_drop_background" = "#0969DA33"
+"editor.drag_drop_tab_background" = "#00000022"
+
+"inlay_hint.foreground" = "#57606A"
+"inlay_hint.background" = "#EAEFF5"
+
+"error_lens.error.foreground" = "#CF222E"
+"error_lens.error.background" = "#CF222E18"
+"error_lens.warning.foreground" = "#4D2D00"
+"error_lens.warning.background" = "#4D2D0018"
+"error_lens.other.foreground" = "#57606A"
+"error_lens.other.background" = "#57606A18"
+
+"completion_lens.foreground" = "#6E7781"
+
+"source_control.added" = "#116329CC"
+"source_control.removed" = "#CF222ECC"
+"source_control.modified" = "#0969DACC"
+
+"panel.current.foreground.dim" = "#57606A"
+"panel.hovered.background" = "#EAEFF5"
+"panel.hovered.active.background" = "#EAEFF5"
+"panel.hovered.foreground" = "#24292F"
+"panel.hovered.foreground.dim" = "#57606A"
+
+"status.modal.normal.background" = "#0969DA"
+"status.modal.normal.foreground" = "#FFFFFF"
+"status.modal.insert.background" = "#116329"
+"status.modal.insert.foreground" = "#FFFFFF"
+"status.modal.visual.background" = "#4D2D00"
+"status.modal.visual.foreground" = "#FFFFFF"
+"status.modal.terminal.background" = "#8250DF"
+"status.modal.terminal.foreground" = "#FFFFFF"
+
+"debug.breakpoint" = "#CF222E"
+"debug.breakpoint.hover" = "#CF222E66"
+
+"markdown.blockquote" = "#6E7781"
+
+"terminal.cursor" = "#0969DA"
+"terminal.foreground" = "#24292F"
+"terminal.background" = "#F6F8FA"
+"terminal.black" = "#24292F"
+"terminal.red" = "#FF2B2B"
+"terminal.green" = "#116329"
+"terminal.yellow" = "#4D2D00"
+"terminal.blue" = "#0969DA"
+"terminal.magenta" = "#8250DF"
+"terminal.cyan" = "#1B7C83"
+"terminal.white" = "#6E7781"
+"terminal.bright_black" = "#57606A"
+"terminal.bright_red" = "#FF2B2B"
+"terminal.bright_green" = "#1A7F37"
+"terminal.bright_yellow" = "#633C01"
+"terminal.bright_blue" = "#218BFF"
+"terminal.bright_magenta" = "#A475F9"
+"terminal.bright_cyan" = "#3192AA"
+"terminal.bright_white" = "#8C959F"

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+    <Product Name="r0" Id="*" UpgradeCode="9c09a374-1135-4782-959f-2dec376a1dfa" Language="1033" Codepage="1252" Version="0.4.6" Manufacturer="r0">
+        <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine"/>
+        <MajorUpgrade AllowSameVersionUpgrades="yes" DowngradeErrorMessage="A newer version of [ProductName] is already installed."/>
+        <Icon Id="r0.exe" SourceFile=".\extra\windows\r0.ico"/>
+        <WixVariable Id="WixUILicenseRtf" Value=".\extra\windows\wix\license.rtf"/>
+        <Property Id="ARPPRODUCTICON" Value="r0.exe"/>
+        <MediaTemplate EmbedCab="yes"/>
+        <UIRef Id="WixUI_Minimal"/>
+
+        <Feature Id="ProductFeature" Title="ConsoleApp" Level="1">
+            <ComponentRef Id="R0Exe"/>
+            <ComponentRef Id="R0Shortcut"/>
+            <ComponentRef Id="ModifyPathEnv"/>
+            <ComponentRef Id="ContextMenu"/>
+        </Feature>
+
+        <!-- Create directories -->
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFiles64Folder">
+                <Directory Id="R0ProgramFiles" Name="r0"/>
+            </Directory>
+            <Directory Id="ProgramMenuFolder">
+                <Directory Id="R0ProgramMenu" Name="r0"/>
+            </Directory>
+        </Directory>
+
+        <!-- Application binaries -->
+        <DirectoryRef Id="R0ProgramFiles">
+            <Component Id="R0Exe" Guid="*">
+                <File Id="R0ExeFile" Source=".\target\release-lto\r0.exe" Name="r0.exe" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+
+        <DirectoryRef Id="R0ProgramMenu">
+            <!-- Application shortcut -->
+            <Component Id="R0Shortcut" Guid="7d3d3a8e-febb-4759-8eca-873676d5066a">
+                <Shortcut Id="R0ShortcutFile" Icon="r0.exe" Name="r0" Description="High-Performance Code Editor" Target="[R0ProgramFiles]r0.exe"/>
+                <RemoveFolder Id="R0ProgramMenu" On="uninstall"/>
+                <RegistryValue Root="HKCU" Key="Software\Microsoft\r0" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+
+        <DirectoryRef Id="R0ProgramFiles">
+            <!-- Add to PATH -->
+            <Component Id="ModifyPathEnv" Guid="0581ccb0-5db8-4935-8b07-8f46bc2d7171" KeyPath="yes">
+                <Environment Id="PathEnv" Value="[R0ProgramFiles]" Name="PATH" Permanent="no" Part="first" Action="set" System="yes"/>
+            </Component>
+        </DirectoryRef>
+
+        <DirectoryRef Id="TARGETDIR">
+            <!-- Add context menu -->
+            <Component Id="ContextMenu" Guid="22ad399b-1d77-416c-ae33-57e8f8511177">
+                <RegistryKey Root="HKCU" Key="Software\Classes\Directory\Background\shell\Open r0 here\command">
+                    <RegistryValue Type="string" Value="[R0ProgramFiles]r0.exe &quot;%V&quot;" KeyPath="yes"/>
+                </RegistryKey>
+                <RegistryKey Root="HKCU" Key="Software\Classes\Directory\Background\shell\Open r0 here">
+                    <RegistryValue Type="string" Name="Icon" Value="[R0ProgramFiles]r0.exe"/>
+                </RegistryKey>
+            </Component>
+        </DirectoryRef>
+    </Product>
+</Wix>

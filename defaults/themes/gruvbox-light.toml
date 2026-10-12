@@ -1,0 +1,218 @@
+[color-theme]
+name = "Gruvbox Light"
+
+[ui]
+font-family = ""
+font-size = 13
+header-height = 35
+status-height = 25
+tab-min-width = 100
+activity-width = 48
+scroll-width = 10
+drop-shadow-width = 4
+
+[color-theme.base]
+black = "#3C3836"
+blue = "#076678"
+cyan = "#427B58"
+green = "#79740E"
+grey = "#D5C4A1"
+magenta = "#8F3F71"
+orange = "#AF3A03"
+purple = "#8F3F71"
+red = "#9D0006"
+white = "#FBF1C7"
+yellow = "#B57614"
+
+primary-background = "#FBF1C7"
+secondary-background = "#F2E5BC"
+current-background = "#EBDBB2"
+text = "$black"
+dim-text = "#928374"
+
+[color-theme.syntax]
+"comment" = "#928374"
+"constant" = "#8F3F71"
+"type" = "#427B58"
+"type.builtin" = "#427B58"
+"builtinType" = "#427B58"
+"typeAlias" = "#427B58"
+"class" = "#427B58"
+"struct" = "#427B58"
+"structure" = "#427B58"
+"interface" = "#427B58"
+"enum" = "#427B58"
+"enumMember" = "#8F3F71"
+"enum-member" = "#8F3F71"
+"number" = "#8F3F71"
+"string" = "#79740E"
+"string.escape" = "#8F3F71"
+"escape" = "#8F3F71"
+"function" = "#B57614"
+"method" = "#B57614"
+"function.method" = "#B57614"
+"constructor" = "#B57614"
+"keyword" = "#9D0006"
+"selfKeyword" = "#9D0006"
+"modifier" = "#9D0006"
+"field" = "#076678"
+"property" = "#076678"
+"variable" = "#3C3836"
+"variable.parameter" = "#AF3A03"
+"parameter" = "#AF3A03"
+"variable.other.member" = "#076678"
+"operator" = "#AF3A03"
+"punctuation" = "#3C3836"
+"punctuation.delimiter" = "#928374"
+"punctuation.special" = "#AF3A03"
+"tag" = "#9D0006"
+"attribute" = "#427B58"
+"symbol" = "#8F3F71"
+"label" = "#427B58"
+"embedded" = "#3C3836"
+"text" = "#3C3836"
+"text.literal" = "#79740E"
+"text.title" = "#B57614"
+"text.uri" = "#076678"
+"text.reference" = "#8F3F71"
+
+"markup.heading" = "#B57614"
+"markup.bold" = "#3C3836"
+"markup.italic" = "#3C3836"
+"markup.list" = "#AF3A03"
+"markup.link.url" = "#076678"
+"markup.link.label" = "#427B58"
+"markup.link.text" = "#79740E"
+
+"bracket.color.1" = "#9D0006"
+"bracket.color.2" = "#B57614"
+"bracket.color.3" = "#79740E"
+"bracket.unpaired" = "#9D0006"
+
+[color-theme.ui]
+"r0.error" = "#9D0006"
+"r0.warn" = "#B57614"
+"r0.dropdown_shadow" = "#EBDBB288"
+"r0.border" = "#D5C4A1"
+"r0.scroll_bar" = "#BDAE9366"
+
+"r0.button.primary.background" = "#B57614"
+"r0.button.primary.foreground" = "#FBF1C7"
+
+"r0.tab.active.background" = "#FBF1C7"
+"r0.tab.active.foreground" = "#3C3836"
+"r0.tab.active.underline" = "#AF3A03"
+
+"r0.tab.inactive.background" = "#F2E5BC"
+"r0.tab.inactive.foreground" = "#928374"
+"r0.tab.inactive.underline" = "#AF3A0333"
+
+"r0.tab.separator" = "#D5C4A1"
+
+"r0.icon.active" = "#3C3836"
+"r0.icon.inactive" = "#928374"
+
+"r0.remote.icon" = "#F2E5BC"
+"r0.remote.local" = "#076678"
+"r0.remote.connected" = "#79740E"
+"r0.remote.connecting" = "#B57614"
+"r0.remote.disconnected" = "#9D0006"
+
+"editor.background" = "#FBF1C7"
+"editor.foreground" = "#3C3836"
+"editor.dim" = "#928374"
+"editor.focus" = "#B57614"
+"editor.caret" = "#3C3836"
+"editor.selection" = "#EBDBB2"
+"editor.current_line" = "#F2E5BC"
+"editor.indent_guide" = "#D5C4A1"
+"editor.sticky_header_background" = "#FBF1C7"
+
+"panel.background" = "#F2E5BC"
+"panel.foreground" = "#3C3836"
+"panel.foreground.dim" = "#928374"
+"panel.current.background" = "#EBDBB2"
+"panel.current.foreground" = "#3C3836"
+
+"activity.background" = "#F2E5BC"
+"activity.current" = "#FBF1C7"
+
+"status.background" = "#F2E5BC"
+"status.foreground" = "#3C3836"
+
+"palette.background" = "#F2E5BC"
+"palette.foreground" = "#3C3836"
+"palette.current.background" = "#EBDBB2"
+"palette.current.foreground" = "#3C3836"
+
+"completion.background" = "#F2E5BC"
+"completion.current" = "#EBDBB2"
+"hover.background" = "#F2E5BC"
+"tooltip.background" = "#F2E5BC"
+"tooltip.foreground" = "#3C3836"
+
+"r0.plugin.name" = "#3C3836"
+"r0.plugin.description" = "$text"
+"r0.plugin.author" = "#928374"
+
+"editor.debug_break_line" = "#07667822"
+"editor.link" = "#076678"
+"editor.visible_whitespace" = "#D5C4A180"
+"editor.drag_drop_background" = "#07667833"
+"editor.drag_drop_tab_background" = "#00000022"
+
+"inlay_hint.foreground" = "#928374"
+"inlay_hint.background" = "#EBDBB2"
+
+"error_lens.error.foreground" = "#9D0006"
+"error_lens.error.background" = "#9D000618"
+"error_lens.warning.foreground" = "#B57614"
+"error_lens.warning.background" = "#B5761418"
+"error_lens.other.foreground" = "#928374"
+"error_lens.other.background" = "#92837418"
+
+"completion_lens.foreground" = "#928374"
+
+"source_control.added" = "#79740ECC"
+"source_control.removed" = "#9D0006CC"
+"source_control.modified" = "#076678CC"
+
+"panel.current.foreground.dim" = "#928374"
+"panel.hovered.background" = "#EBDBB2"
+"panel.hovered.active.background" = "#EBDBB2"
+"panel.hovered.foreground" = "#3C3836"
+"panel.hovered.foreground.dim" = "#928374"
+
+"status.modal.normal.background" = "#076678"
+"status.modal.normal.foreground" = "#FFFFFF"
+"status.modal.insert.background" = "#79740E"
+"status.modal.insert.foreground" = "#FFFFFF"
+"status.modal.visual.background" = "#B57614"
+"status.modal.visual.foreground" = "#FFFFFF"
+"status.modal.terminal.background" = "#8F3F71"
+"status.modal.terminal.foreground" = "#FFFFFF"
+
+"debug.breakpoint" = "#9D0006"
+"debug.breakpoint.hover" = "#9D000666"
+
+"markdown.blockquote" = "#928374"
+
+"terminal.cursor" = "#3C3836"
+"terminal.foreground" = "#3C3836"
+"terminal.background" = "#FBF1C7"
+"terminal.black" = "#FBF1C7"
+"terminal.red" = "#FF2B2B"
+"terminal.green" = "#79740E"
+"terminal.yellow" = "#B57614"
+"terminal.blue" = "#076678"
+"terminal.magenta" = "#8F3F71"
+"terminal.cyan" = "#427B58"
+"terminal.white" = "#3C3836"
+"terminal.bright_black" = "#928374"
+"terminal.bright_red" = "#FF2B2B"
+"terminal.bright_green" = "#79740E"
+"terminal.bright_yellow" = "#B57614"
+"terminal.bright_blue" = "#076678"
+"terminal.bright_magenta" = "#8F3F71"
+"terminal.bright_cyan" = "#427B58"
+"terminal.bright_white" = "#282828"
